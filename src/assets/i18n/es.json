@@ -1,0 +1,14 @@
+{
+  "HOME": {
+    "TITLE": "Inicio",
+    "TEXT": "Bienvenido a compañero Magic"
+  },
+  "ABOUT": {
+    "TITLE": "Acerca",
+    "TEXT": "Soy el compañero Magic"
+  },
+  "CONTACT": {
+    "TITLE": "Contacto",
+    "TEXT": "Llámame si puedes"
+  }
+}

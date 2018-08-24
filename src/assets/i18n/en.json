@@ -1,0 +1,14 @@
+{
+  "HOME": {
+    "TITLE": "Home",
+    "TEXT": "Welcome to Magic Companion"
+  },
+  "ABOUT": {
+    "TITLE": "About",
+    "TEXT": "I'm the magic companion"
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "TEXT": "Call me if you can"
+  }
+}
