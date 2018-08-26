@@ -35,6 +35,9 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
       }
     })
   ],
+  exports: [
+    TranslateModule
+  ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
