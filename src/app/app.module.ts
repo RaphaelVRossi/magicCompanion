@@ -14,14 +14,16 @@ import {SplashScreen} from '@ionic-native/splash-screen';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {ConfigPage} from "../pages/config/config";
 
 @NgModule({
   declarations: [
     MyApp,
+    TabsPage,
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    ConfigPage
   ],
   imports: [
     BrowserModule,
@@ -41,10 +43,11 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    TabsPage,
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    ConfigPage
   ],
   providers: [
     StatusBar,

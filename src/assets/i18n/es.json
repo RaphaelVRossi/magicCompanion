@@ -10,5 +10,11 @@
   "CONTACT": {
     "TITLE": "Contacto",
     "TEXT": "Llámame si puedes"
+  },
+  "CONFIG": {
+    "TITLE": "Configuraciones",
+    "FIELDS": {
+      "LANGUAGE": "Idioma"
+    }
   }
 }

@@ -1,5 +1,10 @@
 <ion-tabs>
-  <ion-tab [root]="homeTab" tabTitle="Home" tabIcon="home"></ion-tab>
-  <ion-tab [root]="aboutTab" tabTitle="About" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="contactPage" tabTitle="Contact" tabIcon="contacts"></ion-tab>
+  <ion-tab [root]="homeTab" [tabTitle]="translate.instant('HOME.TITLE')"
+           tabIcon="home"></ion-tab>
+  <ion-tab [root]="aboutTab" [tabTitle]="translate.instant('ABOUT.TITLE')"
+           tabIcon="information-circle"></ion-tab>
+  <ion-tab [root]="contactPage" [tabTitle]="translate.instant('CONTACT.TITLE')"
+           tabIcon="contacts"></ion-tab>
+  <ion-tab [root]="configPage" [tabTitle]="translate.instant('CONFIG.TITLE')"
+           tabIcon="cog"></ion-tab>
 </ion-tabs>
