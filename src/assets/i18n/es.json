@@ -1,7 +1,10 @@
 {
   "HOME": {
     "TITLE": "Inicio",
-    "TEXT": "Bienvenido a compañero Magic"
+    "TEXT": "Bienvenido a compañero Magic",
+    "BUTTONS": {
+      "START": "Comenzar un partido!"
+    }
   },
   "ABOUT": {
     "TITLE": "Acerca",
@@ -16,5 +19,18 @@
     "FIELDS": {
       "LANGUAGE": "Idioma"
     }
+  },
+  "MATCH": {
+    "TITLE": "Partido",
+    "FIELDS": {
+      "LIFE_START": "Cantidad de puntos de vida",
+      "PLAYERS": "Cantidad de jugadores"
+    },
+    "BUTTONS": {
+      "PLAY": "Jugar!"
+    }
+  },
+  "GAME": {
+    "TITLE": "Juego"
   }
 }

@@ -1,7 +1,10 @@
 {
   "HOME": {
     "TITLE": "Home",
-    "TEXT": "Welcome to Magic Companion"
+    "TEXT": "Welcome to Magic Companion",
+    "BUTTONS": {
+      "START": "Start a match!"
+    }
   },
   "ABOUT": {
     "TITLE": "About",
@@ -16,5 +19,18 @@
     "FIELDS": {
       "LANGUAGE": "Language"
     }
+  },
+  "MATCH": {
+    "TITLE": "Match",
+    "FIELDS": {
+      "LIFE_START": "Number of life points",
+      "PLAYERS": "Number of players"
+    },
+    "BUTTONS": {
+      "PLAY": "Play!"
+    }
+  },
+  "GAME": {
+    "TITLE": "Game"
   }
 }

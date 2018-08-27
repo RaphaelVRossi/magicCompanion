@@ -15,14 +15,18 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {ConfigPage} from "../pages/config/config";
+import {MatchPage} from "../pages/match/match";
+import {GamePage} from "../pages/game/game";
 
 @NgModule({
   declarations: [
     MyApp,
     TabsPage,
+    HomePage,
     AboutPage,
     ContactPage,
-    HomePage,
+    MatchPage,
+    GamePage,
     ConfigPage
   ],
   imports: [
@@ -47,6 +51,8 @@ import {ConfigPage} from "../pages/config/config";
     AboutPage,
     ContactPage,
     HomePage,
+    MatchPage,
+    GamePage,
     ConfigPage
   ],
   providers: [
