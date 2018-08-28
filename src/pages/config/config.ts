@@ -15,7 +15,7 @@ import {TranslateService} from "@ngx-translate/core";
   templateUrl: 'config.html',
 })
 export class ConfigPage {
-  languageValue: string;
+  private languageValue: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private translate: TranslateService) {
   }

@@ -16,6 +16,8 @@ import {GamePage} from "../game/game";
   templateUrl: 'match.html',
 })
 export class MatchPage {
+  private playerCounter: number;
+  private lifeStart: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService) {
   }
@@ -26,6 +28,10 @@ export class MatchPage {
 
 
   startGame() {
-    this.navCtrl.push(GamePage);
+    console.log('Player counter:' + this.playerCounter);
+    this.navCtrl.push(GamePage, {
+      'playerCounter': this.playerCounter,
+      'lifeStart': this.lifeStart
+    });
   }
 }

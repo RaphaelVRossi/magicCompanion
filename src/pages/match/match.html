@@ -9,11 +9,11 @@
   <div>
     <ion-item>
       <ion-label floating>{{ 'MATCH.FIELDS.LIFE_START' | translate }}</ion-label>
-      <ion-input type="tel" pattern="\d[10]" maxlength="10"></ion-input>
+      <ion-input [(ngModel)]="lifeStart" type="tel" pattern="\d[10]" maxlength="10"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label floating>{{ 'MATCH.FIELDS.PLAYERS' | translate }}</ion-label>
-      <ion-input type="tel" pattern="\d[2]" maxlength="2"></ion-input>
+      <ion-input [(ngModel)]="playerCounter" type="tel" pattern="\d[2]" maxlength="2"></ion-input>
     </ion-item>
   </div>
   <div>
