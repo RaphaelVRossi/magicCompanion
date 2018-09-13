@@ -13,13 +13,68 @@
 </ion-header>
 
 
-<ion-content padding>
-  <ion-label>TESTE</ion-label>
-  <ion-label>{{ playerCounter }}</ion-label>
-<!--  <div>
-    <ion-item *ngFor="let i of playerCounter">
-      <ion-label>{{ i }}</ion-label>
-      <ion-label>{{ lifeStart }}</ion-label>
-    </ion-item>
-  </div>-->
+<ion-content padding class="card-background-page colorfull-background">
+  <div id="players">
+    <ion-card id="playerOneCard">
+
+      <ion-card-header>
+        <h2>{{ 'GAME.PLAYER_ONE' | translate }}</h2>
+
+        <ion-label>{{ 'GAME.LIFE' | translate }}: {{ lifePlayerOne }}</ion-label>
+      </ion-card-header>
+
+      <ion-card-content padding align-items-center>
+        <div>
+          <button ion-button outline round (click)="addLifePlayerOne()">
+            <ion-icon name="add"></ion-icon>
+          </button>
+          <button ion-button outline round (click)="removeLifePlayerOne()">
+            <ion-icon name="remove"></ion-icon>
+          </button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card id="playerTwoCard">
+
+      <ion-card-header>
+        <h2>{{ 'GAME.PLAYER_TWO' | translate }}</h2>
+
+        <ion-label>{{ 'GAME.LIFE' | translate }}: {{ lifePlayerTwo }}</ion-label>
+      </ion-card-header>
+
+      <ion-card-content padding align-items-center>
+        <div>
+          <button ion-button outline round (click)="addLifePlayerTwo()">
+            <ion-icon name="add"></ion-icon>
+          </button>
+          <button ion-button outline round (click)="removeLifePlayerTwo()">
+            <ion-icon name="remove"></ion-icon>
+          </button>
+        </div>
+
+        <div>
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+              <ion-note>
+                11h ago
+              </ion-note>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

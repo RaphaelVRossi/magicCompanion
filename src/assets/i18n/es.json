@@ -31,6 +31,9 @@
     }
   },
   "GAME": {
-    "TITLE": "Juego"
+    "TITLE": "Juego",
+    "LIFE": "Puntos de vida",
+    "PLAYER_ONE": "Jugador 1",
+    "PLAYER_TWO": "Jugador 2"
   }
 }

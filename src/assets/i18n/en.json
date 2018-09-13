@@ -31,6 +31,9 @@
     }
   },
   "GAME": {
-    "TITLE": "Game"
+    "TITLE": "Game",
+    "LIFE": "Life points",
+    "PLAYER_ONE": "Player 1",
+    "PLAYER_TWO": "Player 2"
   }
 }

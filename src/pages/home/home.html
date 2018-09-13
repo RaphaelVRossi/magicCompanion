@@ -4,8 +4,17 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>{{ 'HOME.TEXT' | translate }}</h2>
+<ion-content padding class="card-background-page colorfull-background">
 
-  <button (click)="startMatch()">{{ 'HOME.BUTTONS.START' | translate }}</button>
+  <ion-card>
+
+    <ion-card-header>
+      <h2>{{ 'HOME.TEXT' | translate }}</h2>
+    </ion-card-header>
+
+    <ion-card-content padding align-items-center>
+      <button ion-button round (click)="startMatch()">{{ 'HOME.BUTTONS.START' | translate }}</button>
+    </ion-card-content>
+
+  </ion-card>
 </ion-content>

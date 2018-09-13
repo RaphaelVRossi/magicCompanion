@@ -5,18 +5,30 @@
 </ion-header>
 
 
-<ion-content padding>
-  <div>
-    <ion-item>
-      <ion-label floating>{{ 'MATCH.FIELDS.LIFE_START' | translate }}</ion-label>
-      <ion-input [(ngModel)]="lifeStart" type="tel" pattern="\d[10]" maxlength="10"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>{{ 'MATCH.FIELDS.PLAYERS' | translate }}</ion-label>
-      <ion-input [(ngModel)]="playerCounter" type="tel" pattern="\d[2]" maxlength="2"></ion-input>
-    </ion-item>
-  </div>
-  <div>
-    <button (click)="startGame()">{{ 'MATCH.BUTTONS.PLAY' | translate }}</button>
+<ion-content padding class="card-background-page colorfull-background">
+  <div id="matchSettings">
+    <ion-card id="matchCard">
+      <ion-card-content padding align-items-center>
+        <div>
+          <div>
+            <ion-item>
+              <ion-label floating>{{ 'MATCH.FIELDS.PLAYERS' | translate }}</ion-label>
+              <ion-input [(ngModel)]="playerCounter" type="tel" pattern="\d[2]" maxlength="2" value="2"></ion-input>
+            </ion-item>
+          </div>
+
+          <div>
+            <ion-item>
+              <ion-label floating>{{ 'MATCH.FIELDS.LIFE_START' | translate }}</ion-label>
+              <ion-input [(ngModel)]="lifeStart" type="tel" pattern="\d[10]" maxlength="10" value="20"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+
+        <div>
+          <button ion-button round (click)="startGame()">{{ 'MATCH.BUTTONS.PLAY' | translate }}</button>
+        </div>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
