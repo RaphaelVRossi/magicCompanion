@@ -46,3 +46,34 @@
   height: 100%;
   background: linear-gradient(360deg, #4EE7FC, #4E5EFC);
 }
+
+ion-icon {
+  &[class*="mana-"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    //background: currentColor;
+    width: 1em;
+    height: 1em;
+  }
+
+  &[class*="mana-B"] {
+    mask-image: url(../assets/icon/B.svg);
+  }
+
+  &[class*="mana-G"] {
+    mask-image: url(../assets/icon/G.svg);
+  }
+
+  &[class*="mana-R"] {
+    mask-image: url(../assets/icon/R.svg);
+  }
+
+  &[class*="mana-U"] {
+    mask-image: url(../assets/icon/U.svg);
+  }
+
+  &[class*="mana-W"] {
+    mask-image: url(../assets/icon/W.svg);
+  }
+}

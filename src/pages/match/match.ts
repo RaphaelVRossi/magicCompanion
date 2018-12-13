@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, NavController} from 'ionic-angular';
 import {TranslateService} from "@ngx-translate/core";
 import {GamePage} from "../game/game";
 
@@ -16,16 +16,15 @@ import {GamePage} from "../game/game";
   templateUrl: 'match.html',
 })
 export class MatchPage {
-  private playerCounter: number;
-  private lifeStart: number;
+  private playerCounter: number = 2;
+  private lifeStart: number = 20;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService) {
+  constructor(public navCtrl: NavController, public translate: TranslateService) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MatchPage');
   }
-
 
   startGame() {
     console.log('Player counter:' + this.playerCounter);

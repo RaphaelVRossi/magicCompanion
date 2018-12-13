@@ -22,7 +22,6 @@ export class ConfigPage {
 
   ionViewDidLoad() {
     this.languageValue = this.translate.currentLang;
-    console.log('ionViewDidLoad ConfigPage');
   }
 
   changeSystemLanguage() {

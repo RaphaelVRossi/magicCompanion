@@ -13,14 +13,15 @@
           <div>
             <ion-item>
               <ion-label floating>{{ 'MATCH.FIELDS.PLAYERS' | translate }}</ion-label>
-              <ion-input [(ngModel)]="playerCounter" type="tel" pattern="\d[2]" maxlength="2" value="2"></ion-input>
+              <ion-input [(ngModel)]="playerCounter" pattern="[1-4]"
+                         maxlength="1"></ion-input>
             </ion-item>
           </div>
 
           <div>
             <ion-item>
               <ion-label floating>{{ 'MATCH.FIELDS.LIFE_START' | translate }}</ion-label>
-              <ion-input [(ngModel)]="lifeStart" type="tel" pattern="\d[10]" maxlength="10" value="20"></ion-input>
+              <ion-input [(ngModel)]="lifeStart" maxlength="3"></ion-input>
             </ion-item>
           </div>
         </div>
@@ -28,6 +29,7 @@
         <div>
           <button ion-button round (click)="startGame()">{{ 'MATCH.BUTTONS.PLAY' | translate }}</button>
         </div>
+
       </ion-card-content>
     </ion-card>
   </div>
